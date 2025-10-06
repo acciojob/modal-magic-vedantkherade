@@ -1,1 +1,49 @@
 /*  your css code here. If applicable */
+.modal{
+	display: none;
+	position: fixed;
+	z-index: 1;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.modal-content{
+	margin: 20% auto; 
+	width: 80%; 
+	border: 2px solid gray;
+	animation: fadeIn 0.3s ease;
+}
+
+.modal-header { 
+	padding: 10px; 
+	background: green; 
+	color: white; 
+	display: flex; 
+	justify-content: space-between; 
+	align-items: center; 
+	margin: 10px;
+}
+
+.modal-body { 
+	padding: 20px; 
+	font-size: 16px; 
+	margin: 10px;
+}
+
+.close-modal { 
+	border: none; 
+	cursor: pointer; 
+}
+
+@keyframes fadeIn { 
+	from {
+		   opacity: 0; 
+		  transform: translateY(-1000px);
+	} 
+	to {
+		opacity: 1; 
+		transform: translateY(0);
+	} 
+}
